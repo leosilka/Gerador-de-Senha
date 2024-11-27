@@ -1,0 +1,74 @@
+.container {
+  max-width: 1087px;
+  max-height: 574px;
+
+  .content {
+    background-color: #ffffff61;
+    border: 5px solid #0000ff;
+    border-radius: 10px;
+    animation: border-radius-animation 2s infinite, border-color-animation 2s infinite;
+
+    .border-avatar {
+      width: 180px;
+      height: 180px;
+      border: 4px solid #000000;
+
+      .avatar {
+        width: 150px;
+      }
+    }
+
+    .copy-icon {
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #000000; 
+    }
+    
+    .copy-icon:hover {
+      color: #0000ff; 
+    }
+  }
+}
+
+.card {
+  background: var(--surface-card);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+@keyframes border-color-animation {
+  0% {
+    border-color: #0000ff;
+  }
+  50% {
+    border-color: #48ff0061;
+  }
+  100% {
+    border-color: #0000ff;
+  }
+}
+
+@media (max-width: 1087px) {
+  .content {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    max-width: 100%;
+    height: 700px;
+    padding: 10px;
+  }
+}
+
+@media (max-height: 574px) {
+  .content {
+    max-height: 100%;
+    padding: 10px;
+  }
+}
